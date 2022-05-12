@@ -27,5 +27,4 @@ outDf['date']
 outDf.describe()
 
 
-for p in range(2, 10):
-  print(p)
+np.
