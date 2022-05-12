@@ -1,0 +1,26 @@
+Liquidity = batch reporting
+
+extract last 5 days on weekly basis for a select funds
+
+road test - derivative stress
+
+
+5 days worth of daya for 8 funds
+aladdin stressed data <- 5 days worth of daya for 8 funds
+
+daily file for 8 funds
+
+
+position data<-road test - port exposure
+
+
+
+
+IM collateral
+
+IM req, VM C collateral margin valye, excess/deficit collateral
+
+
+aladdin view cash balance <- all cash balances at each portfolio level
+
+

@@ -1,0 +1,104 @@
+what has been done + no changes needed
+what has been done + changes may be needed
+what has not be done, and work is needed
+
+
+TODO <- create a bloomberg account to see what data points are there 
+
+
+review backtesting methodogloy of aladdin liquidity model
+
+estimated txn costs in non stressed and stressed conditions
+
+improvving swing pricingp rocess
+
+swing review frequency threshholds owned by product team (policy owner), mel bruce, sharon (cant remember, either quarterly or monthly)
+
+operational team handles the process (back office systems BOS), gerald choo
+
+calc of nav, flows done by boonie
+
+assess is 1% swing threshold is appropriate
+
+is JACI representative of ES funds investment holdings
+
+swing pricing only applies to SICAV, lux domiciled ucits
+
+
+SICAV - ESI_UCITS <- contains all portfolio grpups in aladdin,
+
+focus on asian funds
+
+check with FI team
+
+FOR EACH OF THESE FUNDS, ARE THEY ALL FROM FI TEAM/SAME JACI INDEX OR DIFFERENT INDEX/
+
+are they all using the same JACI index (check with FI team (SAMANTHA YEO)) (using which benchmark, or if no benchmark e.g. total return). each fund may have a different benchmark/ without a benchmark
+
+if all use JACI = ok, if not, what they were using to calculate that and compare to figures calculated from fund
+
+
+get the swing factors actually used from Jul 2021 to June 2021 (explain that MAS wants us to conver  stressed and non stressed periods)
+check with Jarrel Chiew, what was swing factor applied 6 months before/after march 2020 and towards end 2020,first half 2021
+
+
+index provider provides bid-ask spreads
+
+
+with the calculated figures, compare to figures applied back then to see if %
+
+
+4 pricing sources in bloomberg
+
+px_bid, px_ask, BDH
+
+
+all are composite prices, need to understand better (what goes exactly into the composite), which is the best for bid-ask purposes, which is appriortate
+
+
+BMRK, BVAL not good, CBBT, BGN not good
+
+
+whais is BBG coverage, particularly for asia local currency bonds
+
+then write a procedure
+
+for bbg price coberage, include sg unit trust funds as well (fund group: ESI_UT). check the exact funds in aladdin or EISG website
+
+
+
+
+
+EIGB-AG - All ES funds, including all LBUs
+	EISB-AG - all ex EIKR
+		SGB-AG - all EISG funds
+			SGBFI - all sg FI team managed FI funds
+			SGBEQ - all sg EQ team managed EQ funds
+			SGBBAL - 
+	KRB-AG - EIKR
+
+
+
+ESI_UCITS 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+1. we only tested ALASBF, what about other Asia FI funds?
+2. how do we know that difference % is significant or not? is difference material of not?
+3. if we are using fund to calculate cost, (now, benchmark provider provide bid-ask spread)
+if we hold a secutiry that is not in the benchmark, where do we source the data? currently, using sector average calculated from benchmark
+explore pricing data from bloomberg. 1) compare the different sources, and see which one is appropriate 2) whats the coverae of Bloomberg,
+particularly for asia local currency bonds
+once we have answered questions above, and concluded we will use fund to determine the swing factor, we need to have a policies and procedures document
+
+
+sector: ALBI, or JACI, or Merill Lynch
+
+2) how and when do we trigger a review of the appropriateness of the swing factor? do we need a process to monitor the cost and trigger a review?
+
+share the final report to show the level of rigorousness required.
+
+
+part 2.
+explore if the bloomberg prices above can be a good proxy of the actual transaction cost. we need to understand what goes into the bloomberg price
+(is it very lagged, is it actually traded, or are they just indications).
+
+is bloomberg price reflective of actual transaction costs, and compare that cost with the swing factors to answer whether too high or too low (is full spread or half spread appropriate)
+
+if it is ok, then we calculate the actual cost and compare with the swing factor. do assessment if the factor applied is too high or low.
+
+and we do that for different market conditions, under normal or stressed conditions (we use march 2020), normal, before, or after that when markets
+ normalized.
+
+but we may come to the conclusion that bloomberg pirce is not usable, then we may request BRS  to do that. as they have trade information and data information, which can then be used to assess/calculate swing factor.
+so we prepare a representative set of trades, and let them calculate the actual cost and we compare with swing. we may need to frame request in a way that it is for model validation.
+
+
+
+CBBT bloomberg prices
+
+
+do a test to show it is INDEED reasonable/sensible to use full bid/ask during extreme stress (for eg march 2020). one thing we can check to verify this is to find the price volatility OR bid ask spread volatility
+
+
+
+
+Hi all, I will be sending over /uploading on sharepoint some ideas/todos with regards to risk data analysis, information flows, and issues to be explored  
+
+

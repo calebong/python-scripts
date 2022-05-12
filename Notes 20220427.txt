@@ -1,0 +1,79 @@
+ETD or OTC Derivative
+
+ETD - IM, MTM not that much
+OTC - low IM, VM alot
+
+Operations
+
+ETD 2 brokers/custodian =
+
+IM requirements
+HK = Citi files
+SG funds (most) = JPM broker
+
+
+OTC Deri
+BNP custodian
+
+all reports have different structures
+
+Understand deri exposure
+Aladdin = query pf, to understand secutiry type
+
+some funds, only cash allow
+some funds, can post us bonds/sg bonds/ usd corporate bonds
+
+covid - post 400m collateral.
+
+balance cash needs and cash drag
+therefore nego with CP, other than cash, what can the brokers accept?
+
+now, 95% still cash
+
+pru objective = to meet stable future cash flow
+
+try to understand how the sg life/hk life pf makes sense
+
+^ are liquid as well, why not use these as collateral as well
+
+overdraft facility is complicated eg certaub repo activity
+historically, insurance coys provide liquidty to banks; a way to raise cash
+
+tf explore which CP can provide this facility
+
+citi
+scb
+hsbc
+
+stress testing; 1D and 7D test
+
+devaluate of currency
+FX = stress applied to FX forward
+loss in forwards need to be made up for
+
+
+LCR = long term
+BCR = short term
+
+
+remember to aggregate overlay/overlaid portfolios for expousre
+DOES PF HAVE DERI OVERLAY
+
+L is all SICAV
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

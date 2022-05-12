@@ -1,0 +1,43 @@
+find alt sources of bid ask ofr bonds
+
+is bloomberg data sources a reasonable/appropriate source of data for pricing
+
+
+sample diff type of bonds ane time periods
+
+country, currency local/usd, IG/HY, govt/credit, different time periods
+get from aladdin view
+
+take actual trades, dates, timestamp, size
+
+
+
+send to brs, is txn cost
+
+1. actual cost vs aladdin modelled cost numbers (model backtesing/validaiton)
+2. actual cost
+
+SF __ actual cost __ 
+
+traded price vs ??? <- get from blackrock to do comparison
+
+collect historical trade data from aladdin view
+
+
+TF
+
+1. understand bb prices
+2. create udmmy pf and pass to brs
+
+
+
+more important for monitoring purposes everyday
+reg deri exposure
+UT reg deri exposure
+
+
+
+
+
+
+
