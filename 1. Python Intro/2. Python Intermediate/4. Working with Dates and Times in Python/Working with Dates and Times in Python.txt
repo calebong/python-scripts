@@ -1,0 +1,35 @@
+import datetime as dt
+
+ibm_founded = dt.datetime(1911, 6, 16)
+man_on_moon = dt.datetime(1969, 7, 20, 20, 17)
+
+print(ibm_founded)
+print(man_on_moon)
+
+#R appt_start_date_split <- str_split(potus$appt_start_date," ", simplify = TRUE) # str_split by default returns a list, specfy TRUE to return matrix
+
+#R potus <- potus %>% 
+#R  mutate(appt_start_date_one = appt_start_date_split[,1]) %>% 
+#R  mutate(appt_start_date_two = appt_start_date_split[,2])
+
+date_format = "%m/%d/%y %H:%M"
+
+# for row in potus:
+#    appt_start = row[2]
+#    row[2] = dt.datetime.strptime(row[2], date_format)
+
+for row in potus:
+    start_date = row[2]
+    start_date = dt.datetime.strptime(start_date, date_format)
+    row[2] = start_date
+
+
+visitors_per_month = {}
+
+for row in potus:
+    month_dt = row[2] #create and assign datetime OBJECT
+    month_str = month_dt.datetime.strftime("%B %Y") # apply the object to the strftime, assign it to month_str
+        if month_str not in visitors_per_month:
+            visitors_per_month[month_str] = 1
+        else:
+            visitors_per_month[month_str] += 1

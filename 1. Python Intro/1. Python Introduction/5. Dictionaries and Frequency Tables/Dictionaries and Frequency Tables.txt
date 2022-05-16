@@ -1,0 +1,86 @@
+content_ratings = {}
+
+content_ratings["4+"] = 4433
+content_ratings["9+"] = 987
+content_ratings["12+"] = 1155
+content_ratings["17+"] = 622
+
+over_12_n_apps = content_ratings["12+"]
+
+content_ratings = {'4+': 4433, '9+': 987, '12+': 1155, '17+': 622}
+
+is_in_dictionary_1 = '9+' in content_ratings
+is_in_dictionary_2 = '987' in content_ratings
+
+
+if "17+" in content_ratings:
+    result = "It exists"
+
+
+content_ratings = {'4+': 0, '9+': 0, '12+': 0, '17+': 0}
+
+for row in apps_data[1:]:
+    c_rating = row[10]
+    if c_rating in content_ratings:
+        content_ratings[c_rating] += 1
+        
+print(content_ratings)
+
+content_ratings = {}
+
+for row in apps_data[1:]:
+    c_rating = row[10]
+    if c_rating in content_ratings:
+        content_ratings[c_rating] += 1
+    else:
+        content_ratings[c_rating] = 1
+        
+print(content_ratings)
+
+for row in apps_data[1:]:
+    genre = row[11]
+    if genre in genre_counting:
+        genre_counting[genre] += 1
+    else:
+        genre_counting[genre] = 1
+
+print(genre_counting)
+
+
+## convert to proportions/percentages %%
+
+content_ratings = {'4+': 4433, '12+': 1155, '9+': 987, '17+': 622}
+total_number_of_apps = 7197
+
+for rating in content_ratings:
+    content_ratings[rating] /= total_number_of_apps
+    content_ratings[rating] *= 100
+
+percentage_17_plus = content_ratings['17+']
+percentage_15_allowed = content_ratings['4+'] + content_ratings['9+'] + content_ratings['12+']
+
+## populate to new FRESH dictionary within the loop to prevent overwriting ##
+
+c_ratings_proportions = {}
+c_ratings_percentages = {}
+
+for key in content_ratings:
+    proportion = content_ratings[key] / total_number_of_apps
+    percentage = proportion * 100
+    
+    c_ratings_proportions[key] = proportion
+    c_ratings_percentages[key] = percentage
+
+
+##appending##
+
+data_sizes = []
+
+for row in apps_data[1:]:
+    size = float(row[2])
+    data_sizes.append(size)
+
+
+min_size = min(data_sizes)
+max_size = max(data_sizes)
+    

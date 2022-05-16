@@ -1,0 +1,50 @@
+app_data_set = [row_1, row_2, row_3, row_4, row_5]
+rating_sum = 0
+for row in app_data_set:
+    rating = row[-1]
+    rating_sum = rating_sum + rating
+    print(rating_sum)
+    
+avg_rating = rating_sum / len(app_data_set)
+
+
+rating_sum = 0
+apps_data = apps_data[1:]
+
+for ROW in apps_data:
+    rating = float(ROW[7])
+    rating_sum = rating_sum + rating
+    
+avg_rating = rating_sum / len(apps_data)
+    
+
+## appending ##
+
+
+opened_file = open('AppleStore.csv')
+from csv import reader
+read_file = reader(opened_file)
+apps_data = list(read_file)
+
+apps_data = apps_data[1:]
+
+ALL_RATINGS = []
+for row in apps_data:
+    Rating = float(row[7])
+    ALL_RATINGS.append(Rating)
+    
+avg_rating = sum(all_ratings) / len(apps_data)
+
+free_apps_ratings = []
+for row in apps_data[1:]:
+    rating = float(row[7])
+    price = float(row[4])   
+    if price == 0.0:
+        free_apps_ratings.append(rating)
+
+non_free_apps_ratings = []
+for row in apps_data[1:]:
+    price = float(row[4])
+    rating = float(row[7])
+    if price != 0.0:
+        non_free_apps_ratings.append(rating)

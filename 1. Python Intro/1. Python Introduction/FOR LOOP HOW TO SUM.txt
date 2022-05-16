@@ -1,0 +1,8 @@
+total_ask_comments = 0
+
+for post in ask_posts:
+    total_ask_comments += int(post[4])
+    
+avg_ask_comments = total_ask_comments / len(ask_posts)
+
+print(avg_ask_comments)
