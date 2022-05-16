@@ -1,0 +1,9 @@
+report_cleaned <- clean_names(report)
+
+report_cleaned <- report_cleaned %>% mutate(net_investment_amount = str_replace(net_investment_amount,',','')) %>% mutate(net_investment_amount = as.numeric(net_investment_amount))
+
+report_grouped <- report_cleaned %>% select(advisor_name, transaction_type, net_investment_amount) %>% group_by(advisor_name, transaction_type) %>% filter(transaction_type == 'Regular Subscription' | transaction_type == 'One-Off Subscription') %>% summarize(trans = sum(net_investment_amount))
+
+report_final <- report_grouped %>% group_by(advisor_name) %>% summarize(total = sum(trans))
+
+write_csv(report_final,"C:\\Users\\Keziah\\Documents\\Working Directory\\MyData.csv")

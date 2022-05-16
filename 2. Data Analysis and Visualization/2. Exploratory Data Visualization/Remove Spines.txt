@@ -1,0 +1,2 @@
+for key,spine in ax.spines.items():
+        spine.set_visible(False)
