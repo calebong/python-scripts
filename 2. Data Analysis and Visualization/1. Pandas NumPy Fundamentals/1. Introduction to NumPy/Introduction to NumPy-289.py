@@ -27,7 +27,7 @@ taxi = np.array(converted_taxi_list)
 taxi_shape = taxi.shape
 print(taxi_shape)
 
-#R dim(taxi)
+# R dim(taxi)
 
 ## 6. Selecting and Slicing Rows and Items from ndarrays ##
 
@@ -35,31 +35,31 @@ row_0 = taxi[0]
 
 rows_391_to_500 = taxi[391:501]
 
-row_21_column_5 = taxi[21,5]
+row_21_column_5 = taxi[21, 5]
 
 ## 7. Selecting Columns and Custom Slicing ndarrays ##
 
-y = [1,4,7]
-columns_1_4_7 = taxi[:,y]
+y = [1, 4, 7]
+columns_1_4_7 = taxi[:, y]
 
-row_99_columns_5_to_8 = taxi[99,5:9]
+row_99_columns_5_to_8 = taxi[99, 5:9]
 
-rows_100_to_200_column_14 = taxi[100:201,14]
+rows_100_to_200_column_14 = taxi[100:201, 14]
 
 
 ## 8. Vector Math ##
 
-fare_amount = taxi[:,9]
-fees_amount = taxi[:,10]
+fare_amount = taxi[:, 9]
+fees_amount = taxi[:, 10]
 
 fare_and_fees = fare_amount + fees_amount
 
 ## 9. Vector Math Continued ##
 
-trip_distance_miles = taxi[:,7]
-trip_length_seconds = taxi[:,8]
+trip_distance_miles = taxi[:, 7]
+trip_length_seconds = taxi[:, 8]
 
-trip_length_hours = trip_length_seconds / 3600 # 3600 seconds is one hour
+trip_length_hours = trip_length_seconds / 3600  # 3600 seconds is one hour
 
 
 trip_mph = trip_distance_miles / trip_length_hours
@@ -77,12 +77,12 @@ mph_mean = trip_mph.mean()
 # we'll compare against the first 5 rows only
 taxi_first_five = taxi[:5]
 # select these columns: fare_amount, fees_amount, tolls_amount, tip_amount
-fare_components = taxi_first_five[:,9:13]
+fare_components = taxi_first_five[:, 9:13]
 
-fare_sums = fare_components.sum(axis = 1)
+fare_sums = fare_components.sum(axis=1)
 
-fare_totals = taxi_first_five[:,13]
+fare_totals = taxi_first_five[:, 13]
 
 print(fare_totals)
 print(fare_sums)
-
+# hello
